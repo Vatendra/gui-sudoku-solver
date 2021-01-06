@@ -16,7 +16,7 @@ class Sudoku():
             for j in range(N):
                 if(j%NN==0):
                     x_offset = x_offset+4
-                entryMatrix[i][j] = tk.Entry(root, font = ('calibre',16,'bold'), justify='center', bg='#0A090C', fg='#ECC30B',relief='raised')
+                entryMatrix[i][j] = tk.Entry(root, font = ('calibre',16,'bold'), justify='center', bg='#0A090C', fg='#ECC30B',relief='raised', highlightbackground='#FFFDFD', highlightcolor='#B3001B',insertbackground='#B3001B')
                 entryMatrix[i][j].place(x=j*40+x_offset, y=i*40+y_offset, width=40, height=40)
             x_offset = 0
 root = tk.Tk()
